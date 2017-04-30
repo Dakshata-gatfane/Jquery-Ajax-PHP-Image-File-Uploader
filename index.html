@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- Chrome, Firefox OS, Opera and Vivaldi -->
+		<meta name="theme-color" content="#4CAED8">
+		<!-- Windows Phone -->
+		<meta name="msapplication-navbutton-color" content="#4CAED8">
+		<!-- iOS Safari -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="#4CAED8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Jquery Ajax PHP File Uploader</title>
+		<link rel="stylesheet" href="css/style.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+	</head>
+	
+	<body>
+		<div class="mainDiv">
+			<input class="fileUpload" id="fileUpload" type="file" accept="image/*" name="my_file[]" multiple />
+
+			<div id="container" class="container"></div>
+
+			<hr/>
+
+			<div class="container recentImages">
+				<h3>Recently uploaded Images</h3>
+				<div id="recentImages">
+				<div id="noImg">No Recent Images !</div>
+				</div>
+			</div>
+			
+			<br/>
+			<hr/>
+			
+			<div id="allImages">
+				<h3>All Images <span id="imgCount"></span></h3>
+			</div>
+		</div>
+
+		<div class="logs" id="imageLogs">
+			<div class="logsTitle">Image Logs : </div>
+			<div id="error" class="logsContent"></div>
+		</div>
+		<script src="js/jquery.js"></script>
+		<script src="js/md5.min.js"></script>
+		<script src="js/main.js"></script>
+	 </body>
+</html>
